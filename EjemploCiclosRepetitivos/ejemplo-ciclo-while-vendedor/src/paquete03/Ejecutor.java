@@ -60,7 +60,7 @@ public class Ejecutor {
         // cadenaFinal a un archivo
         ArchivoEscritura archivo = new ArchivoEscritura(); // objeto para crear
                                                            // archivo 
-        archivo.establecerNombreArchivo("informacion");
+        archivo.establecerNombreArchivo("clase02");
         archivo.establecerDataFinal(cadenaFinal);
         archivo.agregarRegistros();
     }

@@ -1,0 +1,7 @@
+Datos de Vendedor
+Nombre: dads
+Edad: 45
+Salario mínimo: 54,00
+Número de autos: 5
+Pago mensual: 804,00
+
