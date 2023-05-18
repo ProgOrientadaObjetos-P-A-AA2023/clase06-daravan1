@@ -5,6 +5,7 @@
  */
 package paquete01;
 
+import java.util.Locale;
 import java.util.Scanner;
 
 public class Ejecutor {
@@ -18,9 +19,9 @@ public class Ejecutor {
         boolean bandera;
         String opcion;
         Scanner entrada = new Scanner(System.in);
-
+        entrada.useLocale(Locale.US);
         // Inicio de proceso iterativo 
-        bandera = true;
+        bandera = true;                         
         while (bandera) { // bandera == true
             System.out.println("Ingrese el nombre del vendedor");
             nombre = entrada.nextLine();
@@ -45,14 +46,13 @@ public class Ejecutor {
                     v.obtenerSalarioMinimo(), v.obtenerNumeroAutos(),
                     v.obtenerPagoMensual());
 
-            entrada.nextLine(); // limpieza del buffer
+            entrada.nextLine(); // limpieza del buffer  
             System.out.println("Desea ingresar más vendedores. Ingrese n para"
                     + "salir");
             opcion = entrada.nextLine();
             if (opcion.equals("n")) {
                 bandera = false;
             }
-
         }
     }
 }
